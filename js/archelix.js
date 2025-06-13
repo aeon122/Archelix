@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
 // Define a function that checks for .slide-in-left and .slide-in-right elements
 function animateOnScroll() {
     // Get all elements with these classes and store in a NodeList
-    const elements = document.querySelectorAll('.slide-in-left, .slide-in-right'); // [NodeList of Elements]
+    const elements = document.querySelectorAll('.slide-in-left, .slide-in-right'); // [NodeList of Elements] an array-like list of HTML elements selected from the page.
 
     // Get the height of the visible browser window (viewport)
     const windowHeight = window.innerHeight; // [Number]
