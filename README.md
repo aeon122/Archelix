@@ -42,10 +42,6 @@ Rebuilt and developed by:
 
 ---
 
-<pre lang="markdown"><code>## 📂 Folder Structure ```bash archelix/ ├── index.html ├── css/ │ └── style.css ├── js/ │ └── main.js # JavaScript functionality (if applicable) ├── assets/ │ └── images/ # Image assets └── README.md # Project documentation ``` </code></pre>
-
----
-
 ## 🚀 Getting Started
 
 To run locally:
