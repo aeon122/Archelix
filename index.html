@@ -16,13 +16,14 @@
     <nav class="navbar navbar-expand-lg shadow py-4 pe-5">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img class="w-50 ms-5" src="images/archelix-nav-logo.png" alt="Archelix logo">
+                <img class="w-50 ms-4 ms-md-5" src="images/archelix-nav-logo.png" alt="Archelix logo">
             </a>
             <button class="navbar-toggler nav-bg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <hr class="d-md-none">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active px-4" href="index.html"><b>HOME</b></a></li>
                     <li class="nav-item"><a class="nav-link px-4" href="about.html"><b>ABOUT</b></a></li>
@@ -39,14 +40,16 @@
 
         <!-- Hero Section -->
         <section class="bring-past-bg py-5">
-            <img class="velociraptor d-none d-md-block" src="./images/velociraptor.png" alt="velociraptor" />
+            <img class="velociraptor d-none d-md-block" src="./images/velociraptor.png" alt="velociraptor">
             <div class="container py-5">
-                <div class="row py-5">
+                <div class="row">
                     <div class="col-12 col-md-6">
                         <h1 class="text-center text-md-start txt-tan pb-3">
                             EXPERIENCE THE PAST, POWERED BY THE FUTURE
                         </h1>
-                        <a class="btn btn-outline-blue txt-md txt-tan px-4" href="#"><b>LAUNCH EXPERIENCE</b></a>
+                        <div class="text-center text-md-start mt-4 pt-1">
+                            <a class="btn btn-outline-blue txt-md txt-tan px-4" href="#"><b>LAUNCH EXPERIENCE</b></a>
+                        </div>
                     </div>
                     <div class="col-12 col-md-6"></div>
                 </div>
@@ -55,15 +58,16 @@
 
         <!-- Details Section -->
         <section class="details-bg py-5">
-            <div class="container pt-5">
-                <div class="row">
-                    <div class="col-12 col-md-6"></div>
-                    <div class="col-12 col-md-6">
-                        <p class="text-center text-md-start txt-tan txt-md">
-                            At Archelix, we engineer awe-inspiring robotic dinosaurs to spark curiosity, ignite imaginations, and bring ancient life forms roaring back through cutting-edge tech.
+            <div class="container py-5 py-md-0 pt-5">
+                <div class="row py-5">
+                    <!-- div class="col-12 col-md-6"></!-->
+                    <div class="col-12">
+                        <p class="text-center txt-tan txt-med">
+                            At Archelix, we engineer awe-inspiring robotic dinosaurs to spark curiosity, ignite
+                            imaginations, and bring ancient life forms roaring back through cutting-edge tech.
                         </p>
-                        <div class="text-center text-md-end mt-5 pt-3">
-                            <a class="btn btn-outline-tan txt-tan px-4" href="#">Discover the Tech</a>
+                        <div class="text-center mt-4 pt-3">
+                            <a class="btn btn-outline-tan txt-tan txt-md px-4" href="#">Discover the Tech</a>
                         </div>
                     </div>
                 </div>
@@ -89,14 +93,16 @@
 
         <!-- Exhibition Section -->
         <section class="exhibition-bg py-5">
-            <div class="container pt-5">
-                <div class="row">
+            <div class="container py-5 py-md-0 pt-5">
+                <div class="row pt-4">
                     <div class="col-12 col-md-6">
                         <h2 class="text-center text-md-start txt-tan txt-lg">EXPERIENCE ARCHELIX LIVE</h2>
                         <p class="text-center text-md-start txt-tan txt-md">
-                            From bustling cities to local museums, our next-gen exhibits tour the country—bringing ultra-realistic robotics and prehistoric giants to life. Want to host the future of dino-tech? Reach out below.
+                            From bustling cities to local museums, our next-gen exhibits tour the country—bringing
+                            ultra-realistic robotics and prehistoric giants to life. Want to host the future of
+                            dino-tech? Reach out below.
                         </p>
-                        <div class="text-center text-md-start mt-5 pt-3">
+                        <div class="text-center text-md-start mt-4 pt-3">
                             <a class="btn btn-outline-tan txt-tan px-4" href="#">Let’s Talk Exhibits</a>
                         </div>
                     </div>
@@ -107,17 +113,18 @@
 
         <!-- Newsletter Section -->
         <section class="newsletter-bg py-5">
-            <div class="container pt-5">
-                <div class="row">
+            <div class="container py-5 py-md-0 pt-md-5">
+                <div class="row pt-md-4">
                     <div class="col-12 col-md-6">
-                        <p class="text-center text-md-start txt-tan txt-md">Be the first to know what’s next in dino-tech innovation.</p>
+                        <h3 class="text-center text-md-start txt-tan mt-md-5">Be the first to know what’s next in
+                            dino-tech innovation.</h3>
                         <ul class="txt-tan txt-md">
                             <li>Upcoming Exhibits</li>
                             <li>Tech Careers at Archelix</li>
                             <li>Special Ticket Access</li>
                             <li>The Archelix Digest – our robotics & AI magazine</li>
                         </ul>
-                        <div class="text-center text-md-start mt-5">
+                        <div class="text-center text-md-start mt-4 pt-2">
                             <a class="btn btn-outline-tan txt-tan px-4" href="#">Join the Future</a>
                         </div>
                     </div>
@@ -142,6 +149,7 @@
                                 .back-to-top svg [data-color="1"] {
                                     fill: transparent;
                                 }
+
                                 .back-to-top svg [data-color="2"],
                                 .back-to-top svg [data-color="3"] {
                                     fill: #b3b3b3;

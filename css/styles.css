@@ -10,7 +10,9 @@
     --color-white: #ffffff;
 
     /* Font Sizes */
+    --h1-xl: 3.2rem;
     --font-md: 1.5rem;
+    --font-med: 1.9rem;
     --font-lg: 2.8rem;
 
     /* Fonts */
@@ -88,6 +90,10 @@ body {
    Typography Helpers
    ========================================================================== */
 
+h1 {
+    font-size: var(--h1-xl);
+}
+
 .txt-tan {
     color: var(--color-tan);
 }
@@ -98,6 +104,10 @@ body {
 
 .txt-md {
     font-size: var(--font-md);
+}
+
+.txt-med {
+    font-size: var(--font-med);
 }
 
 .txt-lg {
@@ -118,7 +128,7 @@ body {
 .velociraptor {
     position: absolute;
     z-index: 1;
-    width: 38%;
+    width: 42%;
     right: 0;
 }
 
@@ -170,6 +180,12 @@ body {
     background-color: var(--color-blue);
     background-size: cover;
     background-position: center center;
+}
+
+@media (max-width: 767px) {
+    .newsletter-bg {
+        background-position: right center;
+    }
 }
 
 /* ==========================================================================
