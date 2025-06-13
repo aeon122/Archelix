@@ -35,7 +35,8 @@ Original design collaboration with:
 
 - Daniel Aguilar  
 - Johnny Tran  
-- Javier Franco  
+- Javier Franco
+- Bryan Gratts
 
 Rebuilt and developed by:  
 **Bryan Gratts**
