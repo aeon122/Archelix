@@ -46,6 +46,7 @@ body {
 
 .nav-link {
     color: var(--color-blue);
+    border-radius: 7px;
 }
 
 .nav-link.active {
@@ -156,6 +157,17 @@ body {
 .exhibition-bg {
     background-image: url('../images/exhibition-bg.jpg');
     background-color: var(--color-tan);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ==========================================================================
+   Newsletter Section
+   ========================================================================== */
+
+.newsletter-bg {
+    background-image: url('../images/newsletter-bg.png');
+    background-color: var(--color-blue);
     background-size: cover;
     background-position: center center;
 }
