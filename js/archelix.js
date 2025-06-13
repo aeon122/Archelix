@@ -28,3 +28,31 @@ function animateOnScroll() {
 // Run animation on scroll and page load
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
+
+/* ==========================================================================
+   Smooth Scrolling
+   ========================================================================== */
+
+// Add slide-in animation to headings and paragraphs on page load   
+/* ==========================================================================
+   Slide-Up on Scroll for Headings and Paragraphs
+   ========================================================================== */
+
+function animateSlideUp() {
+    const slideText = document.querySelectorAll('.slide-up');
+    const windowHeight = window.innerHeight;
+
+    slideText.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        if (elementTop < windowHeight - 60) {
+            el.classList.add('visible');
+        }
+    });
+}
+
+// Run on scroll and load
+window.addEventListener('scroll', animateSlideUp);
+window.addEventListener('load', animateSlideUp);
+document.querySelectorAll('h1, h2, h3, ul, p').forEach(el => {
+    el.classList.add('slide-up');
+});

@@ -48,6 +48,8 @@ body {
 
 .navbar {
     background-color: var(--color-tan);
+    z-index: 10;
+    position: relative;
 }
 
 .nav-link {
@@ -118,6 +120,12 @@ body {
     color: var(--color-blue) !important;
 }
 
+@media (max-width: 767px) {
+    .d-grid-mobile {
+        display: grid !important
+    }
+}
+
 /* ==========================================================================
    Typography Helpers
    ========================================================================== */
@@ -155,6 +163,7 @@ h1 {
         opacity: 0;
         transform: translateX(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -166,6 +175,7 @@ h1 {
         opacity: 0;
         transform: translateX(100px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -184,6 +194,31 @@ h1 {
 
 .slide-in-right.visible {
     animation: slideInRight 1s ease-out forwards;
+}
+
+/* ==========================================================================
+   Slide-Up Animation for Text
+   ========================================================================== */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.slide-up.visible {
+    animation: slideUp 0.8s ease-out forwards;
 }
 
 /* ==========================================================================
@@ -299,5 +334,9 @@ footer {
 }
 
 footer p {
+    font-weight: 600;
+}
+
+.fw-medium {
     font-weight: 600;
 }
