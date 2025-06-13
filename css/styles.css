@@ -1,49 +1,106 @@
 /* ==========================================================================
-   Nav Styles
+   Root Variables
    ========================================================================== */
 
-.navbar {
-    background-color: #F7F3E0;
+:root {
+    /* Colors */
+    --color-blue: #1b4e9f;
+    --color-tan: #F7F3E0;
+    --color-dark: #101010;
+    --color-white: #ffffff;
 
-}
+    /* Font Sizes */
+    --font-md: 1.5rem;
+    --font-lg: 2.8rem;
 
-.nav-link {
-    color: #1b4e9f;
-}
+    /* Fonts */
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-.nav-link.active {
-    color: #F7F3E0 !important;
-    background-color: #1b4e9f;
+    /* Padding / Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+
+    /* Border */
+    --border-width: 2px;
 }
 
 /* ==========================================================================
-   button Styles
+   Global Styles
+   ========================================================================== */
+
+body {
+    font-family: var(--font-family-base);
+    color: var(--color-blue);
+    background-color: var(--color-tan);
+}
+
+/* ==========================================================================
+   Navigation Styles
+   ========================================================================== */
+
+.navbar {
+    background-color: var(--color-tan);
+}
+
+.nav-link {
+    color: var(--color-blue);
+}
+
+.nav-link.active {
+    color: var(--color-tan) !important;
+    background-color: var(--color-blue);
+}
+
+/* ==========================================================================
+   Button Styles
    ========================================================================== */
 
 .btn-outline-blue {
     background-color: transparent;
-    border: 2px solid #1b4e9f;
-    color: #1b4e9f;
+    border: var(--border-width) solid var(--color-blue);
+    color: var(--color-blue);
 }
 
 .btn-outline-blue:hover,
 .btn-outline-blue:active,
 .btn-outline-blue:focus {
-    background-color: #1b4e9f;
-    color: #F7F3E0;
+    background-color: var(--color-blue);
+    color: var(--color-tan);
 }
 
 .btn-outline-tan {
     background-color: transparent;
-    border: 2px solid #F7F3E0;
-    color: #F7F3E0;
+    border: var(--border-width) solid var(--color-tan);
+    color: var(--color-tan);
 }
 
 .btn-outline-tan:hover,
 .btn-outline-tan:active,
-.btn-outline-tan:focus { 
-    background-color: #F7F3E0;
-    color: #1b4e9f;
+.btn-outline-tan:focus {
+    background-color: var(--color-tan);
+    color: var(--color-blue);
+}
+
+/* ==========================================================================
+   Typography Helpers
+   ========================================================================== */
+
+.txt-tan {
+    color: var(--color-tan);
+}
+
+.txt-blue {
+    color: var(--color-blue);
+}
+
+.txt-md {
+    font-size: var(--font-md);
+}
+
+.txt-lg {
+    font-size: var(--font-lg);
 }
 
 /* ==========================================================================
@@ -52,13 +109,9 @@
 
 .bring-past-bg {
     background-image: url('../images/bring-past-future.jpg');
-    background-color: #101010;
+    background-color: var(--color-dark);
     background-size: cover;
     background-position: center center;
-}
-
-.txt-tan {
-    color: #F7F3E0;
 }
 
 .velociraptor {
@@ -74,13 +127,9 @@
 
 .details-bg {
     background-image: url('../images/details-bg.png');
-    background-color: #1b4e9f;
+    background-color: var(--color-blue);
     background-size: cover;
     background-position: center center;
-}
-
-.txt-md {
-    font-size: 1.5rem;
 }
 
 /* ==========================================================================
@@ -89,19 +138,10 @@
 
 .innovative-immersive-bg {
     background-image: url('../images/innovative-immersive.jpg');
-    background-color: #F7F3E0;
+    background-color: var(--color-tan);
     background-size: cover;
     background-position: center center;
 }
-
-.txt-blue {
-    color: #1b4e9f;
-}
-
-.txt-lg {
-    font-size: 2.8rem;
-}
-
 
 @media (max-width: 767px) {
     .innovative-immersive-bg {
@@ -115,25 +155,28 @@
 
 .exhibition-bg {
     background-image: url('../images/exhibition-bg.jpg');
-    background-color: #F7F3E0;
+    background-color: var(--color-tan);
     background-size: cover;
     background-position: center center;
 }
 
-
 /* ==========================================================================
    Back-to-Top Button
    ========================================================================== */
+
 .back-to-top {
     position: fixed;
-    bottom: 1.25rem;
-    right: 1.25rem;
+    bottom: var(--space-sm);
+    right: var(--space-sm);
     width: 35px;
     height: 35px;
     margin-right: 20px;
     --icon-opacity: 1;
-    transition: right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.3s, background-color 0.25s ease-in-out;
     display: none;
+    transition:
+        right 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55),
+        opacity 0.3s,
+        background-color 0.25s ease-in-out;
 }
 
 .back-to-top.show {
@@ -145,7 +188,7 @@
    ========================================================================== */
 
 footer {
-    background-color: #F7F3E0;
-    color: #1b4e9f;
+    background-color: var(--color-tan);
+    color: var(--color-blue);
     padding: 10px 0;
 }
