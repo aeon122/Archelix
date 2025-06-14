@@ -236,7 +236,7 @@ h1 {
 .velociraptor {
     position: absolute;
     right: 0;
-    width: 42%;
+    width: 39%;
     z-index: 1;
 }
 
@@ -250,7 +250,7 @@ h1 {
 
 /* Exhibition Section */
 .exhibition-bg {
-    background-image: url('../images/exhibition-bg.jpg');
+    background-image: url('../images/black-mid-graph-01.jpg');
     background-color: var(--color-tan);
     background-size: cover;
     background-position: center center;
@@ -267,6 +267,7 @@ h1 {
 .t-rex {
     position: absolute;
     width: 39.48%;
+   
 }
 
 /* Newsletter Section */

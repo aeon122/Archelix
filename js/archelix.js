@@ -72,6 +72,7 @@ function animateSlideUp() {
     console.log(`[Slide-Up] Window height: ${windowHeight}`);
 
     // Loop through each .slide-up element
+    // this is a fat arrow function to make the code more concise and readable
     slideText.forEach(el => {
         // Get the distance from the top of the viewport to the element
         const elementTop = el.getBoundingClientRect().top; // [Number]
