@@ -231,6 +231,7 @@ h1 {
     background-color: var(--color-dark);
     background-size: cover;
     background-position: center center;
+    background-attachment: fixed;
 }
 
 .velociraptor {
@@ -248,13 +249,6 @@ h1 {
     background-position: center center;
 }
 
-/* Exhibition Section */
-.exhibition-bg {
-    background-image: url('../images/black-mid-graph-01.jpg');
-    background-color: var(--color-tan);
-    background-size: cover;
-    background-position: center center;
-}
 
 /* Innovative Immersive Section */
 .innovative-immersive-bg {
@@ -267,7 +261,21 @@ h1 {
 .t-rex {
     position: absolute;
     width: 39.48%;
-   
+
+}
+
+/* Exhibition Section */
+.exhibition-bg {
+    background-image: url('../images/black-mid-graph-01.jpg');
+    background-color: var(--color-tan);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (max-width: 767px) {
+    .exhibition-bg {
+        background-position: left center;
+    }
 }
 
 /* Newsletter Section */
