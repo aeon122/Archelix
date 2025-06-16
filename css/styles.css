@@ -120,7 +120,7 @@ body {
     color: var(--color-blue) !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .d-grid-mobile {
         display: grid !important
     }
@@ -284,9 +284,15 @@ h1 {
     background-position: center center;
 }
 
-.saber-tooth {
+.bronto-mech {
     position: absolute;
-    width: 42.5%;
+    width: 47.8%;
+}
+
+.bronto-mech-md {
+    position: absolute;
+    width: 52.8%;
+    bottom: -1503px;
 }
 
 /* Who We Are Section */
@@ -301,7 +307,7 @@ h1 {
    Responsive
    ========================================================================== */
    
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .exhibition-bg {
         background-position: left center;
     }
