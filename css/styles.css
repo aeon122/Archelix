@@ -154,6 +154,10 @@ h1 {
     font-size: var(--font-lg);
 }
 
+.fw-medium {
+    font-weight: 600;
+}
+
 /* ==========================================================================
    Animations
    ========================================================================== */
@@ -272,12 +276,6 @@ h1 {
     background-position: center center;
 }
 
-@media (max-width: 767px) {
-    .exhibition-bg {
-        background-position: left center;
-    }
-}
-
 /* Newsletter Section */
 .newsletter-bg {
     background-image: url('../images/newsletter-bg.png');
@@ -291,20 +289,29 @@ h1 {
     width: 42.5%;
 }
 
+/* Who We Are Section */
+.titanoboa {
+    position: absolute;
+    right: 0;
+    width: 37%;
+    z-index: 1;
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
+   
+@media (max-width: 767px) {
+    .exhibition-bg {
+        background-position: left center;
+    }
+}
 
 @media (max-width: 767px) {
     .newsletter-bg {
         background-position: right center;
     }
 
-    /* Uncomment if you want to add responsive background for immersive section
-    .innovative-immersive-bg {
-        background-image: url('../images/innovative-immersive-mobile.jpg');
-    }
-    */
 }
 
 /* ==========================================================================
@@ -343,9 +350,5 @@ footer {
 }
 
 footer p {
-    font-weight: 600;
-}
-
-.fw-medium {
     font-weight: 600;
 }
