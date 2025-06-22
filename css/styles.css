@@ -105,7 +105,7 @@ body {
 .btn-outline-blue {
     background-color: transparent;
     border: var(--border-width) solid var(--color-blue);
-    color: var(--color-blue);
+    color: var(--color-blue) !important;
 }
 
 .btn-outline-blue:hover,
@@ -118,7 +118,7 @@ body {
 .btn-outline-tan {
     background-color: transparent;
     border: var(--border-width) solid var(--color-tan);
-    color: var(--color-tan);
+    color: var(--color-tan) !important;
 }
 
 .btn-outline-tan:hover,
@@ -152,11 +152,11 @@ h1 {
 }
 
 .txt-blue {
-    color: var(--color-blue);
+    color: var(--color-blue) !important;
 }
 
 .txt-tan {
-    color: var(--color-tan);
+    color: var(--color-tan) !important;
 }
 
 .txt-sm {
