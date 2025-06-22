@@ -11,8 +11,10 @@
 
     /* Fonts */
     --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-body: 'source-sans-pro', sans-serif;
 
     /* Font Sizes */
+    --font-sm: 1.2rem;
     --font-md: 1.5rem;
     --font-med: 1.7rem;
     --font-lg: 2.8rem;
@@ -37,7 +39,7 @@ html {
 }
 
 body {
-    font-family: var(--font-family-base);
+    font-family: var(--font-family-body);
     color: var(--color-blue);
     background-color: var(--color-tan);
 }
@@ -136,6 +138,15 @@ body {
    Typography Helpers
    ========================================================================== */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+nav ul li {
+    font-family: var(--font-family-base);
+}
+
 h1 {
     font-size: var(--h1-xl);
 }
@@ -148,6 +159,10 @@ h1 {
     color: var(--color-tan);
 }
 
+.txt-sm {
+    font-size: var(--font-sm);
+}
+
 .txt-md {
     font-size: var(--font-md);
 }
@@ -158,6 +173,14 @@ h1 {
 
 .txt-lg {
     font-size: var(--font-lg);
+}
+
+.txt-shadow {
+    text-shadow: 2px 2px 4px #00000041;
+}
+
+.txt-shadow-med {
+    text-shadow: 2px 2px 4px #00000017;
 }
 
 .fw-medium {
