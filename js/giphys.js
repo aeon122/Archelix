@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Your Giphy API key, needed to authenticate the API requests
     const apiKey = "HZY3ZgP5jlwxrFD7v5iV7GRjeWPIjil3";
     // Limit the number of GIF results fetched per query to 15
-    const limit = 15;
+    const limit = 21;
     const offset = 5; // Skip first 5 results
     // Define a function that fetches and displays GIFs for a given search query
     function fetchGifs(query) {
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 data.data.forEach(gif => {
                     // Create a Bootstrap column div to wrap the image for responsive layout
                     const col = document.createElement("div");
-                    col.className = "col-10 col-sm-6 col-md-4";
+                    col.className = "col-12 col-sm-6 col-md-4";
 
                     // Create an image element for the GIF
                     const img = document.createElement("img");
