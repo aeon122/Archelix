@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg shadow py-4 pe-md-5">
         <div class="container-fluid">
@@ -42,14 +43,36 @@
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link px-4" href="about.html"><b>ABOUT</b></a></li>
-                    <li class="nav-item"><a class="nav-link px-4" href="exhibits.html"><b>EXHIBITS</b></a></li>
-                    <li class="nav-item"><a class="nav-link px-4" href="gallery.html"><b>GALLERY</b></a></li>
+                    <!-- Exhibits dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-4" href="#" id="exhibitsDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>EXHIBITS</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="exhibitsDropdown">
+                            <li><a class="dropdown-item" href="exhibits.html#top">Exhibitions</a></li>
+                            <li><a class="dropdown-item" href="exhibits.html#live-exhibit">Live Exhibit</a></li>
+                            <li><a class="dropdown-item" href="exhibits.html#upcoming-exhibit">Upcoming Exhibit</a></li>
+                        </ul>
+                    </li>
+                    <!-- Gallery dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle px-4" href="#" id="galleryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <b>GALLERY</b>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+                            <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                            <li><a class="dropdown-item" href="giphys.html">Giphys</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link px-4 pe-5" href="contact.html"><b>CONTACT</b></a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Navbar End -->
+
 
     <!-- Main Content Start -->
     <main>
@@ -136,9 +159,19 @@
                             experience? Check out below.
                         </p>
                         <div class="text-center text-lg-start mt-4 pt-3">
-                            <a class="btn btn-outline-tan txt-tan d-grid-mobile px-4" href="gallery.html">
-                                <b>View Our Gallery</b>
-                            </a>
+                            <div class="row">
+                                <div class="col-6 col-md-5">
+                                    <a class="btn btn-outline-tan txt-tan d-grid-mobile px-4 disabled"
+                                        href="gallery.html">
+                                        <b>View Our Gallery</b>
+                                    </a>
+                                </div>
+                                <div class="col-6 col-md-5">
+                                    <a class="btn btn-outline-tan txt-tan d-grid-mobile px-4" href="giphys.html">
+                                        <b>View Our Giphys</b>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-6"></div>

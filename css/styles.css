@@ -274,6 +274,14 @@ h1 {
     z-index: 1;
 }
 
+.deinosuchus {
+    position: absolute;
+    right: 0;
+    top: 190px;
+    width: 47%;
+    z-index: 1;
+}
+
 /* Details Section */
 .details-bg {
     background-image: url('../images/details-bg.png');
