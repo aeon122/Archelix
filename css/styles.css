@@ -44,6 +44,10 @@ body {
     background-color: var(--color-tan);
 }
 
+.form-control {
+    background-color: #f9f7f0 !important;
+}
+
 /* ==========================================================================
    Navigation Styles
    ========================================================================== */
