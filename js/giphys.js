@@ -37,6 +37,7 @@ function fetchGifs(query) {
         })
         .then(data => {
             console.log(`Number of GIFs received: ${data.data.length}`); // Log number of GIFs received
+            console.log("Fetch Full Data", data);
             gifGrid.innerHTML = ""; // Clear the loading message before displaying results
 
             // If no GIFs were found for the search query, display a warning message
@@ -51,7 +52,6 @@ function fetchGifs(query) {
                 // Create a Bootstrap column div to wrap the image for responsive layout
                 const col = document.createElement("div");
                 col.className = "col-12 col-sm-6 col-md-4";
-
                 // Create an image element for the GIF
                 const img = document.createElement("img");
                 // Set the image source URL to the fixed height version of the GIF
@@ -60,10 +60,12 @@ function fetchGifs(query) {
                 img.alt = gif.title;
                 // Add CSS classes for styling and responsive sizing
                 img.className = "img-fluid rounded w-100 h-100 my-4 pb-4";
-
                 // Append the image element inside the column div
+                // "Append" means to add the element to the end of another element.
+                // This adds the <img> to the <div class="col-...">
                 col.appendChild(img);
                 // Append the column div inside the main GIF container on the page
+                // This adds the column (which contains the image) to the main GIF grid container
                 gifGrid.appendChild(col);
             });
 
