@@ -16,7 +16,7 @@ const searchInput = document.getElementById("search-input");
 const apiKey = "HZY3ZgP5jlwxrFD7v5iV7GRjeWPIjil3";
 // Limit the number of GIF results fetched per query to 15
 const limit = 15;
-const offset = 0; // Skip first 5 results
+const offset = 0;
 
 /* ==========================================================================
    Fetch and Display GIFs - Call Giphy API and show results
