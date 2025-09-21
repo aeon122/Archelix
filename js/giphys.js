@@ -1,7 +1,7 @@
 
 // Wait until the HTML page is fully loaded before running any JavaScript.
 document.addEventListener("DOMContentLoaded", () => {
-    
+
     // Get the HTML element where the GIF images will be displayed
     const gifGrid = document.getElementById("dino-gifs");
     // Get the search form element to detect when user submits a search
@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Fetch GIFs from Giphy's search API with the given query
         // encodeURIComponent(query) ensures special characters in the query are URL-safe
-        fetch(`https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(query)}&limit=${limit}&offset=${offset}`)
+        const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(query)}&limit=${limit}&offset=${offset}`
+        fetch(url)
             .then(res => {
                 console.log("Response received from Giphy API."); // Log when response is received
                 return res.json(); // Parse the response body as JSON
@@ -73,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(error => {
                 // If there is an error during the fetch process, show an error message
-                console.error("Error fetching Giphy:", error); // Log the error details
+                console.error("Error fetching GIFs:", error); // Log the error details
                 gifGrid.innerHTML = `<p class="text-center text-danger">Failed to load GIFs. Try again later.</p>`;
             });
     }
@@ -102,8 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(`Constructed query: "${query}"`); // Log the constructed query
 
         // Call fetchGifs to fetch and display GIFs for the constructed query
-        if (query) {
-            fetchGifs(query);
-        }
+        // if (query) {
+        fetchGifs(query);
     });
 });
